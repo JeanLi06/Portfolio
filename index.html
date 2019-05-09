@@ -11,40 +11,45 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <!--Animate on Scroll-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>Portfolio de Jean Liautaud</title>
 </head>
-<body class="container" id="home">
+<body class="container center" id="home">
 <header>
-        <nav data-aos="fade-right">
-            <ul class="hidden">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#langages">Langages</a></li>
-                <li><a href="#tools">Outils</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <ul>
-                <li><a href="#home"><i class="fas fa-home"></i></a></li>
-                <li><a href="#langages"><i class="fas fa-code"></i></a></li>
-                <li><a href="#tools"><i class="fas fa-tools"></i></a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i></a></li>
-            </ul>
-        </nav>
+    <nav data-aos="fade-right">
+        <ul class="hidden">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#langages">Langages</a></li>
+            <li><a href="#tools">Outils</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+            <li><a class="js-scrollTo" href="#home"><i class="fas fa-home"></i></a></li>
+            <li><a class="js-scrollTo" href="#langages"><i class="fas fa-code"></i></a></li>
+            <li><a class="js-scrollTo" href="#tools"><i class="fas fa-tools"></i></a></li>
+            <li><a class="js-scrollTo" href="#contact"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    </nav>
     <h1 data-aos="zoom-in" data-aos-duration="2000">Jean Liautaud</h1>
     <h2>Développeur</h2>
     <H2>Intégrateur Web</h2>
 </header>
 <main>
     <section id="langages">
-        <p>Langages</p>
+        <h3>Langages</h3>
         <img src="img/html5.jpg" alt="Html5">
         <img src="img/css3.png" alt="Css3">
         <img src="img/js.png" alt="JS">
-        <img src="img/MySQL.png" alt="MySQL">
+        <img src="img/mySQL.png" alt="MySQL">
         <img src="img/php.png" alt="Php">
     </section>
     <section id="tools">
-        <p>Outils</p>
+        <h3>Outils</h3>
         <img src="img/jquery.gif" alt="Jquery">
         <img src="img/bootstrap.png" alt="Bootstrap">
         <img src="img/sass.png" alt="Sass" name="Sass">
@@ -52,7 +57,7 @@
         <img src="img/Phpstorm.png" alt="Sass" name="Sass">
     </section>
     <section id="contact">
-        <p>Contact</p>
+        <h3>Contact</h3>
     </section>
 </main>
 <footer></footer>
