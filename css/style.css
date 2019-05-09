@@ -1,0 +1,98 @@
+/*GLOBAL */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: all .2s ease 0s;
+  transition: all .2s ease 0s;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  color: #F9A825;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a3d62+0,4a69bd+37,0c2461+66,0c2461+66,60a3bc+91,0c2461+100 */
+  background: #0a3d62;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a3d62', endColorstr='#0c2461',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  position: relative; }
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  margin: 0 auto; }
+
+.container {
+  height: 100vh;
+  width: auto;
+  padding: 3rem 3rem;
+  text-align: center; }
+
+main {
+  line-height: 4rem; }
+
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/**********************************/
+/*          Navigation            */
+/**********************************/
+nav ul li {
+  list-style: none;
+  text-align: center;
+  display: inline-block; }
+  nav ul li:hover {
+    transform: translateY(4px); }
+  nav ul li + li {
+    margin-left: 3rem; }
+
+a {
+  color: #fcd088;
+  font-size: 2rem;
+  cursor: pointer; }
+  a:hover {
+    color: #eb2f06; }
+
+/**********************************/
+/*            Header              */
+/**********************************/
+h1 {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+header {
+  height: 100vh;
+  width: auto; }
+
+/**********************************/
+/*            Langage             */
+/**********************************/
+#langages, #tools {
+  height: calc(100vh * 1.5);
+  /* On calcule une hauteur plus grande pour pouvoir ajouter de l'espace entre les images*/
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around; }
+  #langages img, #tools img {
+    height: 150px;
+    width: auto;
+    border: #4a69bd 2px solid;
+    padding: 3px;
+    -webkit-box-shadow: 5px 5px 9px 0px #4a69bd;
+    -moz-box-shadow: 5px 5px 9px 0px #4a69bd;
+    box-shadow: 5px 5px 9px 0px #4a69bd; }
