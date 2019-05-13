@@ -12,10 +12,7 @@
 html {
   font-size: 62.5%; }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  color: #F9A825;
+.darkBackground {
   background: #0a3d62;
   /* Old browsers */
   background: -moz-linear-gradient(-45deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%);
@@ -25,14 +22,46 @@ body {
   background: linear-gradient(135deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%) fixed no-repeat;
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a3d62', endColorstr='#0c2461', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-  position: relative; }
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.orangeBackground {
+  background: #f9a825;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, #eb2f06 70%, #eb2f06 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, #eb2f06 70%, #eb2f06 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #f9a825 1%, #f9a825 32%, #eb2f06 70%, #eb2f06 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9a825', endColorstr='#60a3bc', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */ }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  color: #F9A825;
+  position: relative;
+  background-color: darkblue; }
 
 h1, h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   letter-spacing: 0.2rem;
   margin: 0 auto; }
+
+h3:before, h3:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 5px;
+  background: #eee; }
+
+h3:before {
+  margin-right: 3px; }
+
+h3:after {
+  margin-left: 3px; }
 
 .container {
   height: 100vh;
@@ -78,7 +107,7 @@ a {
   font-size: 2rem;
   cursor: pointer; }
   a:hover {
-    color: #eb2f06; }
+    color: #fde3ba; }
 
 /**********************************/
 /*            Header              */
@@ -94,18 +123,6 @@ header {
 /**********************************/
 /*            Langage             */
 /**********************************/
-#langages {
-  background: #f9a825;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, #eb2f06 70%, #eb2f06 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, #eb2f06 70%, #eb2f06 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #f9a825 1%, #f9a825 32%, #eb2f06 70%, #eb2f06 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9a825', endColorstr='#60a3bc', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */ }
-
 #langages, #tools {
   height: calc(100vh * 1.5);
   /* On calcule une hauteur plus grande pour pouvoir ajouter de l'espace entre les images*/
@@ -131,14 +148,12 @@ header {
 /*             Outils             */
 /**********************************/
 #tools {
-  color: #F9A825;
-  background: #0a3d62;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%) fixed no-repeat;
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a3d62', endColorstr='#0c2461', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */ }
+  color: #F9A825; }
+
+/**********************************/
+/*            Contact             */
+/**********************************/
+#contact a {
+  border: 1px solid #4a69bd;
+  border-radius: 50px;
+  padding: 5px 10px; }
