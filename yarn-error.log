@@ -1,0 +1,39 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\laragon\bin\yarn\bin\yarn.js
+
+PATH: 
+  C:\laragon\www\monPortfolio\node_modules\.bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files (x86)\Common Files\Adobe\AGL;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\laragon\bin\php\php-7.1.20-Win32-VC14-x64\;C:\Program Files\nodejs\;C:\ProgramData\ComposerSetup\bin;C:\laragon\bin;C:\laragon\bin\apache\httpd-2.4.27-win64-VC14\bin;C:\laragon\bin\composer;C:\laragon\bin\git\bin;C:\laragon\bin\git\cmd;C:\laragon\bin\git\mingw64\bin;C:\laragon\bin\git\usr\bin;C:\laragon\bin\laragon\utils;C:\laragon\bin\mysql\mysql-5.7.19-winx64\bin;C:\laragon\bin\nginx\nginx-1.14.0;C:\laragon\bin\ngrok;C:\laragon\bin\nodejs\node-v8;C:\laragon\bin\notepad++;C:\laragon\bin\php\php-7.1.20-Win32-VC14-x64;C:\laragon\bin\putty;C:\laragon\bin\redis\redis-x64-3.2.100;C:\laragon\bin\telnet;C:\laragon\bin\yarn\bin;C:\laragon\usr\bin;C:\Users\jliau\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\jliau\AppData\Roaming\Composer\vendor\bin;C:\Users\jliau\AppData\Roaming\npm;C:\Users\jliau\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\jliau\AppData\Local\Programs\Python\Python37\;C:\Users\jliau\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PhpStorm 2018.3.4\bin;
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  10.14.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\laragon\www\monPortfolio\node_modules\mkdirp\node_modules\minimist'
+
+npm manifest: 
+  {
+    "name": "monportfolio",
+    "version": "1.0.0",
+    "description": "Portfolio de Jean Liautaud - Formation 3W Academy",
+    "main": "index.html",
+    "scripts": {
+      "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    },
+    "author": "Jean Liautaud",
+    "license": "ISC",
+    "dependencies": {
+      "node-sass": "^4.11.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
