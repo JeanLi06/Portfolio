@@ -1,0 +1,210 @@
+/* VISUALISATION DES BLOCS */
+/*  div, header, section, article, aside, nav {
+    border: 1px dashed rgba(0,0,0,0.15);
+    background-color: rgba(0,0,0,0.05);
+}
+.clear {
+    border: 1px dashed red;
+} */
+/*GLOBAL */
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+ body {
+     font-size: 1em;
+     font-family: 'Playfair Display', serif;
+     background-color: white;
+}
+
+ a {
+     text-decoration: none;
+ }
+
+ main {
+	margin: 0 auto;
+}
+
+ header {
+ 	height: 690px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/fond.jpg);
+    background-position: 100% -90px;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+}
+
+ header p {
+ 	font-family: 'Kaushan Script', cursive;
+}
+
+ header h1 {
+     font-size: 2em;
+     padding-top: 200px;
+     text-shadow: 0.1em 0.1em #aaa;
+}
+
+#promo {
+	font-family: 'Playfair Display', serif; 
+	font-weight: bold;
+	font-size: 1.2em;
+	height: 20px;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding-top: 0.3em;
+    padding-bottom: 1.6em;
+}
+
+ nav ul {
+     font-size: 1.5em;
+     margin-bottom: -19px;
+     margin-top: 0;
+     background-color: rgba(255, 255, 255, 0.3);
+}
+
+ nav ul li {
+    display: inline-block;
+    padding: 0 50px;
+}
+ nav a {
+     color: white;
+}
+
+
+/* deux Articles */
+#deuxArticles {
+	line-height: 1.5;
+	margin: 40px;
+}
+
+ #deuxArticles h3{
+ 	clear: both;
+    text-align: center;
+    padding-top: 10px;
+}
+
+hr {
+	clear: both;
+	width: 95%;
+}
+
+
+ #yoga_cours {
+     float: left;
+     margin-right: 15px;
+     margin-bottom: 50px;
+}
+
+ #yoga_posture {
+     float: right;
+      margin-left: 15px;
+      margin-bottom: 50px;
+}
+/* Trois Articles */
+ #troisArticles{
+     background-image: url(../img/background_section.jpg);
+     background-position: bottom;
+     background-size: cover;
+     background-repeat: no-repeat;
+     color: white;
+     clear: both;
+     line-height: 2;
+     text-align: center;
+}
+
+.troisArticlesImages {
+	width: 200px;
+}
+
+ #article1, #article2, #article3 {
+     display: inline-block;
+     vertical-align: top;
+     width: 25%;
+     text-align: center;
+     padding: 40px;
+}
+/*Footer*/
+ #licence {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 25px;
+     background-color: #8D6FD1;
+}
+ #licence img {
+     width: 100px;
+}
+
+/********Contact***********/
+#contact p, #contact h3 {
+    text-align: center;
+}
+
+#contact table {
+    margin: 0 auto;
+    width: 90%;
+    border: 1px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: solid 1px;
+    padding: 10px;
+}
+
+#contact table caption {
+    color: white;
+    background-color: #c4a9de;
+    text-align: left;
+    font-family: 'Kaushan Script', cursive;
+    padding: 15px;
+}
+
+#contact table tr {
+    padding: 10px;
+    text-align: center;
+}
+
+/*on aligne la première colonne*/
+#contact table tr td:first-child {
+    text-align: left;
+}
+
+/*On colorie une ligne sur 2 dans le tableau*/
+table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; 
+}
+
+/*on colorie le texte de dernière colonne*/
+#contact table tr td:nth-child(3) {
+    color: #c4a9de;
+}
+
+/****** formulaire *******/
+form input {
+    display: inline-block;
+}
+
+fieldset {
+    margin: 3em;
+}
+
+form ul, form select, input {
+    text-align: center;
+}
+
+form ul li, form select, input {
+    display: inline-block;
+    margin: 0 20px 0 0px;
+}
+
+#envoyer {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 5px 15px;
+    background-color: #8D6FD1;
+    color: white;
+    font-family: 'Playfair Display', serif; 
+}

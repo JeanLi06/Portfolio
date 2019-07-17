@@ -31,12 +31,18 @@ html {
   /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, #eb2f06 70%, #eb2f06 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #f9a825 1%, #f9a825 32%, #eb2f06 70%, #eb2f06 100%);
+  background: linear-gradient(135deg, #f9a825 1%, #f9a825 32%, #eb2f06 70%, #eb2f06 100%) fixed no-repeat;
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9a825', endColorstr='#60a3bc', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */ }
 
+.hidden {
+  display: none;
+  visibility: hidden; }
+
 body {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
   color: #F9A825;
@@ -49,43 +55,63 @@ h1, h2 {
   letter-spacing: 0.2rem;
   margin: 0 auto; }
 
+h3, h4, h5 {
+  font-size: 3.3rem;
+  color: #eee;
+  margin: 3rem auto; }
+
 h3:before, h3:after {
   content: '';
   display: inline-block;
   vertical-align: middle;
-  width: 20px;
-  height: 5px;
+  width: 35px;
+  height: 3px;
   background: #eee; }
 
 h3:before {
-  margin-right: 3px; }
+  margin-right: 6px; }
 
 h3:after {
-  margin-left: 3px; }
+  margin-left: 6px; }
+
+h4 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  padding: 0 10px; }
+
+h5 {
+  font-size: 1.5rem;
+  margin-top: -1rem; }
 
 .container {
   height: 100vh;
-  width: auto;
-  padding: 3rem 3rem; }
+  max-width: 1000px;
+  padding: 0; }
 
 .center {
   text-align: center;
   margin: 0 auto; }
 
 main {
-  line-height: 4rem; }
+  line-height: 4rem;
+  display: flex;
+  flex-flow: column wrap; }
 
-.hidden {
-  display: none;
-  visibility: hidden; }
+section {
+  min-height: 100vh; }
 
 /**********************************/
 /*          Navigation            */
 /**********************************/
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 nav {
-  display: inline-block;
   position: fixed;
-  width: 100%;
+  -webkit-backface-visibility: hidden;
+  width: 100vw;
   top: 0;
   left: 0;
   transform: translateX(-50%);
@@ -101,13 +127,14 @@ nav {
       transform: translateY(4px); }
     nav ul li + li {
       margin-left: 3rem; }
-
-a {
-  color: #fcd088;
-  font-size: 2rem;
-  cursor: pointer; }
-  a:hover {
-    color: #fde3ba; }
+  nav a {
+    color: #fcd088;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    display: block; }
+    nav a:hover {
+      color: #fde3ba; }
 
 /**********************************/
 /*            Header              */
@@ -123,37 +150,51 @@ header {
 /**********************************/
 /*            Langage             */
 /**********************************/
-#langages, #tools {
-  height: calc(100vh * 1.5);
-  /* On calcule une hauteur plus grande pour pouvoir ajouter de l'espace entre les images*/
+#langages, #tools, #sites {
+  height: 100%;
+  width: auto;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  justify-content: space-around;
-  background-color: #F9A825;
-  color: #60a3bc; }
-  #langages img, #tools img {
+  justify-content: space-around; }
+  #langages img, #tools img, #sites img {
     height: 150px;
     width: auto;
     border: #4a69bd 2px solid;
     padding: 3px;
+    margin: 10px auto;
     background-color: #eeeeee;
     -webkit-box-shadow: 5px 5px 9px 0 #4a69bd;
     -moz-box-shadow: 5px 5px 9px 0 #4a69bd;
     box-shadow: 5px 5px 9px 0 #4a69bd; }
-  #langages h3, #tools h3 {
-    font-size: 4rem; }
 
 /**********************************/
 /*             Outils             */
 /**********************************/
-#tools {
-  color: #F9A825; }
+/**********************************/
+/*             Sites              */
+/**********************************/
+#sites figure {
+  position: relative; }
+
+#sites figcaption {
+  color: red;
+  position: absolute;
+  display: inline;
+  text-align: left; }
+
+#sites img {
+  height: auto;
+  width: 350px; }
 
 /**********************************/
 /*            Contact             */
 /**********************************/
-#contact a {
-  border: 1px solid #4a69bd;
-  border-radius: 50px;
-  padding: 5px 10px; }
+#contact {
+  min-height: 100vh; }
+  #contact p {
+    margin: 20px 0; }
+  #contact a {
+    border: 1px solid #4a69bd;
+    border-radius: 50px;
+    padding: 5px 10px; }

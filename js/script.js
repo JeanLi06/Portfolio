@@ -1,15 +1,17 @@
 
 
-// Pour chaque image dans main, on attache un attribut pour l'animation, si mobile
+// Pour chaque image dans main, on attache un attribut pour l'animation, si mobile/tablette
 if ($(window).width() < 767) {
-    $('main section img:odd').attr('data-aos', 'fade-right');
-    $('main section img:even').attr('data-aos', 'fade-left');
+    $('main section figure:odd').attr('data-aos', 'fade-right');
+    $('main section figure:even').attr('data-aos', 'fade-left');
     $('body').removeClass('container');
 }
 
-
 // Init de Animate On Scroll
-AOS.init();
+AOS.init({
+    once: true,// whether animation should happen only once - while scrolling down
+    anchorPlacement: 'top-bottom'
+});
 
 // Smooth scroll - Les liens du menu doivent avoir une classe "js-scrollTo"
 $(document).ready(function() {

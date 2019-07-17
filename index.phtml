@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -21,6 +22,7 @@
     <title>Portfolio de Jean Liautaud</title>
 </head>
 <body class="container center darkBackground" id="home">
+
 <header>
     <nav data-aos="fade-right" class="menu">
         <ul class="hidden">
@@ -30,9 +32,12 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <ul>
+<!--            TODO ouvrir les sites dans une nouvelle page-->
             <li><a class="js-scrollTo" href="#home"><i class="fas fa-home"></i></a></li>
             <li><a class="js-scrollTo" href="#langages"><i class="fas fa-code"></i></a></li>
             <li><a class="js-scrollTo" href="#tools"><i class="fas fa-tools"></i></a></li>
+            <li><a class="js-scrollTo" href="#sites"><i class="fas fa-sitemap"></i></a></li>
+            <li><a class="js-scrollTo" href="#projets"><i class="fas fa-user"></i></a></li>
             <li><a class="js-scrollTo" href="#contact"><i class="fas fa-envelope"></i></a></li>
         </ul>
     </nav>
@@ -42,7 +47,7 @@
     <h2>Junior</h2>
 </header>
 <main>
-    <section id="langages" class="orangeBackground">
+    <section id="langages" class="orangeBackground aos-item">
         <h3>Langages</h3>
         <figure><img src="img/html5.jpg" alt="Html5"></figure>
         <figure><img src="img/css3.png" alt="Css3"></figure>
@@ -50,7 +55,7 @@
         <figure><img src="img/mySQL.png" alt="MySQL"></figure>
         <figure><img src="img/php.png" alt="Php"></figure>
     </section>
-    <section id="tools" class="darkBackground">
+    <section id="tools" class="darkBackground aos-item">
         <h3>Outils</h3>
         <figure><img src="img/jquery.gif" alt="Jquery"></figure>
         <figure><img src="img/bootstrap.png" alt="Bootstrap"></figure>
@@ -58,19 +63,29 @@
         <figure><img src="img/git.png" alt="Git"></figure>
         <figure><img src="img/Phpstorm.png" alt="Phpstorm"></figure>
     </section>
-    <section id="sites" class="orangeBackground">
+    <section id="sites" class="orangeBackground aos-item">
         <h3>Sites</h3>
         <h4>Sites réalisés dans le cadre de ma formation à la 3W Academy</h4>
-        <figure><a href="projects/ila_yoga_PHP/index.php"><img src="img/ila_yoga_small.png" alt="Ila Yoga"></a></figure>
-        <figure><img src="img/mind_geek_small.png" alt="Mind Geek"></figure>
-        <figure><img src="img/cup_of_tea_small.png" alt="Cup of Tea"></figure>
+        <figure><a href="projects/ila_yoga_PHP/index.php"><img src="img/ila_yoga_small.png" alt="Ila Yoga"></a>
+            <h5>Ila Yoga</h5>
+        </figure>
+        <figure><a href="projects/mindgeek/index.php"><img src="img/mind_geek_small.png" alt="Mind Geek"></a>
+            <h5>Mind Geek</h5>
+        </figure>
+        <figure><a href="projects/cup_of_tea/index.php"><img src="img/cup_of_tea_small.png" alt="Cup of Tea"></a>
+            <h5>Cup of Tea</h5>
+        </figure>
     </section>
-    <section id="projets" class="darkBackground">
-       <h3>Projets personnels</h3>
-       <figure><img src="img/cup_of_tea_small.png" alt="Cup of Tea"></figure>
-
+    <section id="projets" class="darkBackground aos-item">
+        <h3>Projets personnels</h3>
+        <figure><a href="projects/surfaceDeBoy/index.html"><img src="img/surfaceBoy-small.png" alt="Surface de Boy"></a>
+            <h5>Surface de Boy</h5>
+        </figure>
+        <figure><a href="projects/pixellisationCanvas/index.html"><img src="img/pixellisation-small.png" alt="Pixellisation"></a>
+            <h5>Pixellisation</h5>
+        </figure>
     </section>
-    <section id="contact" class="orangeBackground">
+    <section id="contact" class="orangeBackground aos-item">
         <h3>Contact</h3>
         <p><a href="mailto:jliautaud&#64;free.fr">E-mail</a></p>
         <p><a href="https://github.com/JeanLi06">Github</a></p>
