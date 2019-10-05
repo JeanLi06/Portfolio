@@ -1,4 +1,12 @@
-//TODO découper le SCSS
+//SASS => Architecture CSS 7-1
+@import "abstracts/variables";
+@import "base/typography";
+@import "layout/header";
+@import "layout/navigation";
+@import "pages/contact";
+@import "pages/langage";
+@import "pages/sites";
+@import "base/utilities";
 
 // /*GLOBAL */
 *, *::before, *::after {
@@ -12,12 +20,15 @@
   padding: 0;
 }
 
-$darkblue: #4a69bd;
-$lightblue: #60a3bc;
-$textPrimary: #F9A825;
-$hover: #eb2f06;
-$white: #eee;
-$link: lighten($textPrimary, 20%);
+body {
+  overflow:scroll;
+  -webkit-overflow-scrolling:touch;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  color: $textPrimary;
+  position: relative;
+  background-color: darkblue;
+}
 
 html {
   font-size: 62.5%;
@@ -39,74 +50,6 @@ html {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9a825', endColorstr='#60a3bc', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 }
 
-.hidden {
-  display: none;
-  visibility: hidden;
-}
-
-body {
-  overflow:scroll;
-  -webkit-overflow-scrolling:touch;
-  
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  color: $textPrimary;
-  position: relative;
-  background-color: darkblue;
-}
-
-h1, h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-  margin: 0 auto;
-}
-
-h3, h4, h5 {
-  font-size: 3.3rem;
-  color: $white;
-  margin: 3rem auto;
-}
-
-h3:before, h3:after { // les tirets autour du titre
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  width: 35px;
-  height: 3px;
-  background: $white;
-}
-
-h3:before {
-  margin-right: 6px
-
-}
-
-h3:after {
-  margin-left: 6px
-}
-
-h4 {
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  padding: 0 10px;
-}
-
-h5 {
-  font-size: 1.5rem;
-  margin-top: -1rem;
-}
-.container {
-  height: 100vh;
-  max-width: 1000px;
-  padding: 0;
-}
-
-.center {
-  text-align: center;
-  margin: 0 auto;
-}
-
 main {
   line-height: 4rem;
   display: flex;
@@ -116,136 +59,3 @@ main {
 section {
   min-height: 100vh;
 }
-
-/**********************************/
-/*          Navigation            */
-/**********************************/
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  //@media(max-width: 767px) { // mobile & tablette
-  //  flex-flow: column wrap;
-  //}
-}
-
-nav {
-  position: fixed;
-  -webkit-backface-visibility: hidden;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  transform: translateX(-50%); //centrage
-  background-color: darken($darkblue, 20%);
-  margin: 0;
-  padding: 3px;
-  z-index: 99;;
-
-  & ul {
-
-    & li {
-      list-style: none;
-      text-align: center;
-      display: inline-block;
-
-      &:hover {
-        transform: translateY(4px);
-      }
-
-      & + li {
-        margin-left: 3rem;
-      }
-    }
-  }
-
-  & a {
-    color: $link;
-    font-size: 2rem;
-    cursor: pointer;
-    text-align: center;
-    display: block;
-
-    &:hover {
-      color: lighten($textPrimary, 30%);
-    }
-  }
-}
-
-/**********************************/
-/*            Header              */
-/**********************************/
-
-h1 {
-  padding-top: 100px;
-  margin-bottom: 100px;
-}
-
-header {
-  height: 100vh;
-  width: auto;
-}
-
-/**********************************/
-/*            Langage             */
-/**********************************/
-#langages, #tools, #sites {
-  height: 100%;
-  width: auto;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: space-around;
-
-  & img {
-    height: 150px;
-    width: auto;
-    border: $darkblue 2px solid;
-    padding: 3px;
-    margin: 10px auto;
-    background-color: #eeeeee;
-    -webkit-box-shadow: 5px 5px 9px 0 rgba(74, 105, 189, 1);
-    -moz-box-shadow: 5px 5px 9px 0 rgba(74, 105, 189, 1);
-    box-shadow: 5px 5px 9px 0 rgba(74, 105, 189, 1);
-  }
-}
-
-/**********************************/
-/*             Outils             */
-/**********************************/
-
-/**********************************/
-/*             Sites              */
-/**********************************/
-#sites {
-    & figure {
-      position: relative;
-    }
-    & figcaption {
-      color: red;
-      position: absolute;
-      display: inline;
-      text-align: left;
-    }
-  & img {
-    height: auto;
-    width: 350px;
-  }
-}
-
-  /**********************************/
-  /*            Contact             */
-  /**********************************/
-
-  #contact {
-    min-height: 100vh;
-    & p {
-      margin: 20px 0;
-    }
-    & a {
-      border: 1px solid $darkblue;
-      border-radius: 50px;
-      padding: 5px 10px;
-    }
-  }
-

@@ -1,0 +1,17 @@
+/**********************************/
+/*            Contact             */
+/**********************************/
+
+#contact {
+  min-height: 100vh;
+
+  & p {
+    margin: 20px 0;
+  }
+
+  & a {
+    border: 1px solid $darkblue;
+    border-radius: 50px;
+    padding: 5px 10px;
+  }
+}

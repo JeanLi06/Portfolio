@@ -1,0 +1,18 @@
+/**********************************/
+/*             Sites              */
+/**********************************/
+#sites {
+  & figure {
+    position: relative;
+  }
+  & figcaption {
+    color: red;
+    position: absolute;
+    display: inline;
+    text-align: left;
+  }
+  & img {
+    height: auto;
+    width: 350px;
+  }
+}
