@@ -1,13 +1,89 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: all .2s ease 0s;
+  transition: all .2s ease 0s;
+  margin: 0;
+  padding: 0; }
+
+body {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  color: #F9A825;
+  position: relative;
+  background-color: darkblue; }
+
+html {
+  font-size: 62.5%; }
+
+.darkBackground {
+  background: #0a3d62;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%) fixed no-repeat;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a3d62', endColorstr='#0c2461', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.orangeBackground {
+  background: #f9a825;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, #cc762d 70%, #cc762d 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, #cc762d 70%, #cc762d 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #f9a825 1%, #f9a825 32%, #cc762d 70%, #cc762d 100%) fixed no-repeat;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9a825', endColorstr='#60a3bc', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */ }
+
+main {
+  line-height: 4rem;
+  display: flex;
+  flex-flow: column wrap; }
+
+section {
+  min-height: 100vh; }
+
+figcaption {
+  margin-top: 3rem; }
+
+figcaption img.thumbnail {
+  height: 25px;
+  width: auto;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none; }
+
 h1, h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   letter-spacing: 0.2rem;
   margin: 0 auto; }
 
-h3, h4, h5 {
+h4, h5 {
   font-size: 3.3rem;
   color: #eee;
   margin: 3rem auto; }
+
+section:nth-of-type(odd) h3 {
+  color: #4a69bd; }
+
+section:nth-of-type(even) h3 {
+  color: #F9A825; }
+
+h3 {
+  margin: 3rem 0;
+  font-size: 3rem; }
 
 h3:before, h3:after {
   content: '';
@@ -25,8 +101,9 @@ h3:after {
 
 h4 {
   font-size: 2rem;
-  letter-spacing: 0.2rem;
-  padding: 0 10px; }
+  letter-spacing: 0.1rem;
+  padding: 0 10px;
+  width: 75%; }
 
 h5 {
   font-size: 1.5rem;
@@ -76,32 +153,20 @@ nav {
     cursor: pointer;
     text-align: center;
     display: block; }
-    nav a:hover {
-      color: #fde3ba; }
-
-/**********************************/
-/*            Contact             */
-/**********************************/
-#contact {
-  min-height: 100vh; }
-  #contact p {
-    margin: 20px 0; }
-  #contact a {
-    border: 1px solid #4a69bd;
-    border-radius: 50px;
-    padding: 5px 10px; }
+  nav a:hover {
+    color: #cc762d; }
 
 /**********************************/
 /*            Langage             */
 /**********************************/
-#langages, #tools, #sites {
+.langages, .tools, .sites {
   height: 100%;
   width: auto;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-around; }
-  #langages img, #tools img, #sites img {
+  .langages img, .tools img, .sites img {
     height: 150px;
     width: auto;
     border: #4a69bd 2px solid;
@@ -115,18 +180,23 @@ nav {
 /**********************************/
 /*             Sites              */
 /**********************************/
-#sites figure {
-  position: relative; }
+#projets figcaption {
+  color: #eee; }
 
-#sites figcaption {
-  color: red;
-  position: absolute;
-  display: inline;
-  text-align: left; }
-
-#sites img {
-  height: auto;
-  width: 350px; }
+/**********************************/
+/*            Contact             */
+/**********************************/
+#contact {
+  min-height: 100vh; }
+  #contact p {
+    margin: 20px 0; }
+  #contact a {
+    border: 1px solid #4a69bd;
+    border-radius: 50px;
+    padding: 5px 10px; }
+    #contact a:hover {
+      background-color: #4a69bd;
+      color: #F9A825; }
 
 .hidden {
   display: none;
@@ -140,57 +210,3 @@ nav {
 .center {
   text-align: center;
   margin: 0 auto; }
-
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  outline: none;
-  text-decoration: none;
-  -webkit-transition: all .2s ease 0s;
-  transition: all .2s ease 0s;
-  margin: 0;
-  padding: 0; }
-
-body {
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  color: #F9A825;
-  position: relative;
-  background-color: darkblue; }
-
-html {
-  font-size: 62.5%; }
-
-.darkBackground {
-  background: #0a3d62;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%) fixed no-repeat;
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a3d62', endColorstr='#0c2461', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */ }
-
-.orangeBackground {
-  background: #f9a825;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, #eb2f06 70%, #eb2f06 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, #eb2f06 70%, #eb2f06 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #f9a825 1%, #f9a825 32%, #eb2f06 70%, #eb2f06 100%) fixed no-repeat;
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9a825', endColorstr='#60a3bc', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */ }
-
-main {
-  line-height: 4rem;
-  display: flex;
-  flex-flow: column wrap; }
-
-section {
-  min-height: 100vh; }

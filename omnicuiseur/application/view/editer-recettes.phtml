@@ -1,0 +1,41 @@
+<!--Affichage des recttes existantes avec la possibilité de modifier et d'effacer-->
+<?php include_once $_SESSION['ROOT_PATH'] . 'application/php/flash_message.php'; ?>
+<?php require_once $_SESSION['ROOT_PATH'] . 'application/php/is_admin.php'; ?>
+<h2>Éditer une recette</h2>
+<table class="recettes center">
+    <caption>Liste des recettes</caption>
+    <thead>
+    <tr>
+        <th>Photo</th>
+        <th>Nom</th>
+        <th class="to-hide-in-media-query">Date</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($list_recipes as $list_recipe): ?>
+        <tr>
+            <td>
+                <figure><img src="img/<?= htmlspecialchars($list_recipe['photo']) ?>" id="image_recette"
+                             alt="<?= htmlspecialchars($list_recipe['name']) ?>" width="100px" height="auto"
+                             class="photo">
+                </figure>
+            </td>
+            <td class="td nom"><?= htmlspecialchars($list_recipe['name']) ?></td>
+            <td class="td to-hide-in-media-query"><?= htmlspecialchars($list_recipe['creation_date_formatted']) ?></td>
+            <td>
+                <a href="index.php?page=editer-recettes&action=editer-recette-seule&id=<?= $list_recipe['id'] ?>"><i
+                            class="fa fa-pen-alt" title="Editer"></i></a>
+                &nbsp;
+                <!--  Demande de confirmation avant d'effacer -->
+                <a onClick="return confirm('Voulez-vous vraimenent supprimer la recette ?');"
+                   href='index.php?page=editer-recettes&action=delete_recipe&id=<?= $list_recipe['id'] ?>'>
+                    <i class="fa fa-trash" title="Effacer"></i>
+                </a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+<?php include_once 'boutton-retour-haut.phtml' ?>
+ 

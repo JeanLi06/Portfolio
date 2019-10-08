@@ -1,0 +1,67 @@
+// /*GLOBAL */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: all .2s ease 0s;
+  transition: all .2s ease 0s;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  color: $textPrimary;
+  position: relative;
+  background-color: darkblue;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.darkBackground {
+  background: #0a3d62; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #0a3d62 0%, $darkblue 37%, #0c2461 66%, #0c2461 66%, $lightblue 91%, #0c2461 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #0a3d62 0%, $darkblue 37%, #0c2461 66%, #0c2461 66%, $lightblue 91%, #0c2461 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #0a3d62 0%, $darkblue 37%, #0c2461 66%, #0c2461 66%, $lightblue 91%, #0c2461 100%) fixed no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a3d62', endColorstr='#0c2461', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+.orangeBackground {
+  background: #f9a825; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, $hover 70%, $hover 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, $hover 70%, $hover 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #f9a825 1%, #f9a825 32%, $hover 70%, $hover 100%) fixed no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9a825', endColorstr='#60a3bc', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+main {
+  line-height: 4rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+section {
+  min-height: 100vh;
+}
+
+figcaption {
+  margin-top: 3rem;
+}
+
+figcaption img.thumbnail {
+  height: 25px;
+  width: auto;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+

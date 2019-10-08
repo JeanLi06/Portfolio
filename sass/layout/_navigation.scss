@@ -20,7 +20,6 @@ nav {
   z-index: 99;;
 
   & ul {
-
     & li {
       list-style: none;
       text-align: center;
@@ -42,9 +41,9 @@ nav {
     cursor: pointer;
     text-align: center;
     display: block;
+  }
 
-    &:hover {
-      color: lighten($textPrimary, 30%);
-    }
+  & a:hover {
+    color: $hover;
   }
 }

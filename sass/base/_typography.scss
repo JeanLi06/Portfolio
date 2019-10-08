@@ -5,10 +5,23 @@ h1, h2 {
   margin: 0 auto;
 }
 
-h3, h4, h5 {
+h4, h5 {
   font-size: 3.3rem;
   color: $white;
   margin: 3rem auto;
+}
+
+section:nth-of-type(odd) h3{
+  color: $darkblue;
+}
+
+section:nth-of-type(even) h3{
+  color: $textPrimary;
+}
+
+h3 {
+  margin: 3rem 0;
+  font-size: 3rem;
 }
 
 h3:before, h3:after { // les tirets autour du titre
@@ -30,8 +43,9 @@ h3:after {
 
 h4 {
   font-size: 2rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   padding: 0 10px;
+  width: 75%;
 }
 
 h5 {

@@ -1,0 +1,20 @@
+/*******************************************************
+                        GENERIC
+ *******************************************************/
+
+.hidden { visibility: hidden }
+
+.italic { font-style: italic}
+
+.left   {
+    text-align: left;
+}
+
+.right   {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
