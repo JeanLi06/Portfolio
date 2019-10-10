@@ -1,21 +1,24 @@
-/**********************************/
-/*            Langage             */
-/**********************************/
-.langages, .tools, .sites {
-  height: 100%;
-  width: auto;
+/*********************************
+*           Langage              *
+*********************************/
+
+.langages,
+.tools,
+.sites {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-around;
+  width: auto;
+  height: 100%;
 
   & img {
-    height: 150px;
     width: auto;
-    border: $darkblue 2px solid;
-    padding: 3px;
+    height: 150px;
     margin: 10px auto;
-    background-color: #eeeeee;
+    padding: 3px;
+    border: $darkblue 2px solid;
+    background-color: #eee;
     -webkit-box-shadow: 5px 5px 9px 0 rgba(74, 105, 189, 1);
     -moz-box-shadow: 5px 5px 9px 0 rgba(74, 105, 189, 1);
     box-shadow: 5px 5px 9px 0 rgba(74, 105, 189, 1);

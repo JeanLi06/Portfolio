@@ -127,16 +127,26 @@
         <figure><img src="img/Phpstorm.png" alt="Phpstorm"></figure>
     </section>
 
-    <section id="contact" class="orangeBackground aos-item">
+    <section id="contact" class="orangeBackground" >
         <h3>Contact</h3>
-            <script src="js/mail.js"></script>
-            <script> protectMyEmail(); </script>
-            <p><a href="https://github.com/JeanLi06">Github</a></p>
-            <p><a href="https://www.linkedin.com/in/jean-liautaud-72a194174/">LinkedIn</a></p>
-            <p><a href="https://github.com/JeanLi06">C.V.</a></p>
+        <script src="js/mail.js"></script>
+        <script> protectMyEmail(); </script>
+        <p><a href="https://github.com/JeanLi06">Github</a></p>
+        <p><a href="https://www.linkedin.com/in/jean-liautaud-72a194174/">LinkedIn</a></p>
+        <p><a href="" id="myBtn">C.V.</a></p>
+        <!-- The CV Modal -->
+        <div id="myModal" class="modal">
+            <!-- CV Modal contenu -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="img/cv.png" alt="CV">
+            </div>
+
+        </div>
     </section>
 </main>
 <script src="js/script.js"></script>
+<script src="js/cv-modal.js"></script>
 <!-- Librairie Animate On Scroll -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script> AOS.init({
@@ -144,7 +154,7 @@
         once: true,// l'animation ne doit se produire qu'une seule fois.
         disableMutationObserver: false,
         anchorPlacement: 'top-bottom',
-        offset: -175
+        // offset: -175
     });
 </script>
 </body>

@@ -1,14 +1,14 @@
 h1, h2 {
+  margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   letter-spacing: 0.2rem;
-  margin: 0 auto;
 }
 
 h4, h5 {
+  margin: 3rem auto;
   font-size: 3.3rem;
   color: $white;
-  margin: 3rem auto;
 }
 
 section:nth-of-type(odd) h3{
@@ -24,31 +24,33 @@ h3 {
   font-size: 3rem;
 }
 
-h3:before, h3:after { // les tirets autour du titre
+// les tirets autour du titre
+h3::before,
+h3::after {
   content: '';
   display: inline-block;
-  vertical-align: middle;
   width: 35px;
   height: 3px;
+  vertical-align: middle;
   background: $white;
 }
 
-h3:before {
+h3::before {
   margin-right: 6px
 }
 
-h3:after {
+h3::after {
   margin-left: 6px
 }
 
 h4 {
+  width: 75%;
+  padding: 0 10px;
   font-size: 2rem;
   letter-spacing: 0.1rem;
-  padding: 0 10px;
-  width: 75%;
 }
 
 h5 {
-  font-size: 1.5rem;
   margin-top: -1rem;
+  font-size: 1.5rem;
 }

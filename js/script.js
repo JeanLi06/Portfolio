@@ -1,5 +1,4 @@
 
-
 // Pour chaque image dans main, on attache un attribut pour l'animation, si mobile/tablette et pas internet explorer
 if ($(window).width() < 769 && $.browser !== "msie" && $.browser !== "Trident") {
     $('main section figure:odd').attr('data-aos', 'fade-right');
