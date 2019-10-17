@@ -5,6 +5,10 @@
 #contact {
   min-height: 100vh;
 
+  & h3 {
+    margin-bottom: 40px;
+  }
+
   & p {
     margin: 20px 0;
   }
