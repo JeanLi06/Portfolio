@@ -1,1 +1,269 @@
-.hidden{visibility: hidden}.visible{visibility: visible}.italic{font-style: italic}.left{text-align: left}.right{text-align: right}.center{text-align: center;margin: 0 auto}
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease; }
+
+body {
+    position: relative;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #f9a825;
+    background-color: #bfbab0; }
+
+html {
+    font-size: 62.5%; }
+
+.darkBackground {
+    background: #0a3d62;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #0a3d62 0%, #4a69bd 37%, #0c2461 66%, #0c2461 66%, #60a3bc 91%, #0c2461 100%) fixed no-repeat;
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a3d62', endColorstr='#0c2461', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */ }
+
+.orangeBackground {
+    background: #f9a825;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, #cc762d 70%, #cc762d 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #f9a825 1%, #f9a825 32%, #cc762d 70%, #cc762d 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #f9a825 1%, #f9a825 32%, #cc762d 70%, #cc762d 100%) fixed no-repeat;
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9a825', endColorstr='#60a3bc', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */ }
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    line-height: 4rem; }
+
+section {
+    min-height: 100vh; }
+
+figcaption {
+    margin-top: 3rem; }
+
+figcaption img.thumbnail {
+    width: auto;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #fefefe;
+    box-shadow: none; }
+
+h1, h2 {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem; }
+
+h4, h5 {
+    margin: 3rem auto;
+    font-size: 3.3rem;
+    color: #fefefe; }
+
+section:nth-of-type(odd) h3 {
+    color: #4a69bd; }
+
+section:nth-of-type(even) h3 {
+    color: #f9a825; }
+
+h3 {
+    margin: 3rem 0;
+    font-size: 3rem; }
+
+h3::before,
+h3::after {
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 3px;
+    vertical-align: middle;
+    background: #fefefe; }
+
+h3::before {
+    margin-right: 6px; }
+
+h3::after {
+    margin-left: 6px; }
+
+h4 {
+    width: 75%;
+    padding: 0 10px;
+    font-size: 2rem;
+    letter-spacing: 0.1rem; }
+
+h5 {
+    margin-top: -1rem;
+    font-size: 1.5rem; }
+
+/**********************************
+*            Header               *
+**********************************/
+h1 {
+    margin-bottom: 100px;
+    padding-top: 100px; }
+
+header {
+    width: auto;
+    height: 100vh; }
+
+/*********************************
+*          Navigation            *
+*********************************/
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+nav {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 3px;
+    background-color: #2b3f76;
+    transform: translateX(-50%);
+    -webkit-backface-visibility: hidden; }
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    list-style: none; }
+nav ul li:hover {
+    transform: translateY(4px); }
+nav ul li + li {
+    margin-left: 3rem; }
+nav a {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: #fcd088;
+    cursor: pointer; }
+nav a:hover {
+    color: #cc762d; }
+
+/*********************************
+*           Langage              *
+*********************************/
+.langages,
+.tools,
+.sites {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    height: 100%; }
+.langages img,
+.tools img,
+.sites img {
+    width: auto;
+    height: 150px;
+    margin: 10px auto;
+    padding: 3px;
+    border: #4a69bd 2px solid;
+    background-color: #eee;
+    -webkit-box-shadow: 5px 5px 9px 0 #4a69bd;
+    -moz-box-shadow: 5px 5px 9px 0 #4a69bd;
+    box-shadow: 5px 5px 9px 0 #4a69bd; }
+
+/**********************************
+*              Sites              *
+**********************************/
+#projets figcaption {
+    color: #fefefe; }
+
+/*********************************
+*            Contact             *
+**********************************/
+#contact {
+    min-height: 100vh; }
+#contact h3 {
+    margin-bottom: 40px; }
+#contact p {
+    margin: 20px 0; }
+#contact a {
+    padding: 5px 10px;
+    border: 1px solid #4a69bd;
+    border-radius: 50px; }
+#contact a:hover {
+    color: #f9a825;
+    background-color: #4a69bd; }
+
+.hidden {
+    display: none;
+    visibility: hidden; }
+
+.container {
+    height: 100vh;
+    max-width: 1000px;
+    padding: 0; }
+
+.center {
+    text-align: center;
+    margin: 0 auto; }
+
+/**********************************
+*              Modal              *
+**********************************/
+.modal {
+    display: none;
+    /* Hidden by default */
+    z-index: 1;
+    /* Sit on top */
+    position: fixed;
+    /* Stay in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #000;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+    width: 95%;
+    /* Could be more or less, depending on screen size */
+    margin: 3% auto;
+    /* 15% from the top and centered */
+    padding: 15px;
+    border: 1px solid #888;
+    background-color: #fefefe; }
+
+.modal-content img {
+    width: 100%;
+    height: auto; }
+
+/* The Close Button */
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa; }
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer; }
