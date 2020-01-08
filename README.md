@@ -1,9 +1,10 @@
 #Portfolio de Jean Liautaud
-##Responsive
+
 Réalisé avec SASS
 
-**Contient 5 sites :**
+**Contient 6 sites :**
 * Omnicuiseur (Site personnel)
+* Sudoku (Site personnel)
 * Pixellisation (Site personnel)
 * Surface de Boy (Site personnel)
 * Mindgeek (Site réalisé lors de ma formation à la 3W Academy)
