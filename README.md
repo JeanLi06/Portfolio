@@ -3,8 +3,8 @@
 Réalisé avec SASS
 
 **Sites :**
-* Omnicuiseur (Site personnel)git
-* Simon, le jeu
+* Omnicuiseur (Site personnel)
+* Simon, le jeu (Site personnel)
 * Sudoku (Site personnel)
 * Pixellisation (Site personnel)
 * Surface de Boy (Site personnel)
