@@ -1,9 +1,13 @@
-#Portfolio de Jean Liautaud
+# Portfolio de Jean Liautaud
 
 Réalisé avec SASS
 
 **Contient 6 sites :**
+<<<<<<< HEAD
 * Omnicuiseur (Site personnel)git
+=======
+* Omnicuiseur (Site personnel)
+>>>>>>> origin/master
 * Sudoku (Site personnel)
 * Pixellisation (Site personnel)
 * Surface de Boy (Site personnel)
