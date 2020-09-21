@@ -2,8 +2,9 @@
 
 Réalisé avec SASS
 
-**Contient 6 sites :**
+**Sites :**
 * Omnicuiseur (Site personnel)git
+* Simon, le jeu
 * Sudoku (Site personnel)
 * Pixellisation (Site personnel)
 * Surface de Boy (Site personnel)
