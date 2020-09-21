@@ -2,12 +2,10 @@
 
 Réalisé avec SASS
 
-**Contient 6 sites :**
-<<<<<<< HEAD
-* Omnicuiseur (Site personnel)git
-=======
+**Sites :**
 * Omnicuiseur (Site personnel)
->>>>>>> origin/master
+* Site studioNEX (Réalisé pour des amis) https://www.studionex.com/
+* Simon, le jeu
 * Sudoku (Site personnel)
 * Pixellisation (Site personnel)
 * Surface de Boy (Site personnel)
