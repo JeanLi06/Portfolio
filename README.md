@@ -4,7 +4,8 @@ Réalisé avec SASS
 
 **Sites :**
 * Omnicuiseur (Site personnel)
-* Simon, le jeu (Site personnel)
+* Site studioNEX (Réalisé pour des amis) https://www.studionex.com/
+* Simon, le jeu
 * Sudoku (Site personnel)
 * Pixellisation (Site personnel)
 * Surface de Boy (Site personnel)
